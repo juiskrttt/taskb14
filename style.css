@@ -1,0 +1,73 @@
+body {
+    background-color: rgba(87, 4, 62, 0.948);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+.box {
+    margin: auto;
+    text-align: center;
+    width: 15%;
+    border: 2px solid;
+    background-color: whitesmoke;
+}
+
+.Title1, .Title2, .Title3, .Title4, .Title5, .Title6 {
+    display: grid;
+    border: 2px solid;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Title1 h2, .Title2 h2, .Title3 h2, .Title4 h2, .Title5 h2, .Title6 h2 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+main section {
+    margin: 30px;
+}
+
+header h1 {
+    border: 1px solid;
+    width: 180px;
+    background-color: white;
+    margin: 0 auto; 
+}
+
+header {
+    justify-content: center; 
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.gerly {
+    color: rgb(1, 1, 8);
+}
+
+@media (min-width: 1440px) {
+    .box {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 760px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+
+    .Title1, .Title2, .Title3, .Title4, .Title5, .Title6 {
+        margin-top: 20px;
+    }
+}
